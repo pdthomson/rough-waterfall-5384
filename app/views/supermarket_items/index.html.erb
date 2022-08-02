@@ -1,0 +1,8 @@
+<div id="supermarket">
+  <h1><%= "#{@supermarket.name}'s Item Index Page" %></h1>
+    <% @supermarket.unique_items.each do |item| %>
+    <ol>
+      <%= item.name %>
+    </ol>
+    <% end %>
+</div>
